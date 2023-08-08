@@ -1,0 +1,18 @@
+{
+  "plugins": ["ejs"],
+  "overrides": [
+    {
+      "files": ["*.ejs"],
+      "processor": "ejs/ejs"
+    }
+  ],
+  "rules": {
+    // Your other ESLint rules go here
+    "indent": ["error", 2], // Example: enforce 2-space indentation
+    "semi": ["error", "always"], // Example: require semicolons
+    "no-unused-vars": "warn" // Example: show warnings for unused variables
+    // Add any other rules you want to enforce
+  }
+}
+
+  

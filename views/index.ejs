@@ -1,0 +1,43 @@
+<!--include header-->
+const ejsLint = require('ejs-lint')
+<%-include('include/_header')-%>
+<!--include header-->
+
+<main id="site-main">
+    <div class="container">
+        
+        <div class="form-title text-center">
+            <a href="/add_user" class="border-shadow">
+            <span class="text-dark">New User<i class="fas fa-user"></i></span>
+            
+        </a>
+        </div>
+
+        
+       <form action="/" method="post">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>@Email</th>
+                <th>Gender</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+               
+                 <%-include(include/_id%)-%>
+                 
+                <%- include(include/_id%) %>
+            </tbody>
+        </table>
+       </form>
+       
+    </div>
+</main>
+
+<!--include footer-->
+<%- include('include/_footer')-%>
+<!--include footer-->
